@@ -1,0 +1,103 @@
+{
+  "name": "@matthew.ngo/analysis-toolkit",
+  "version": "1.0.0",
+  "description": "Comprehensive text and content analysis toolkit built on AI Toolkit with NLP capabilities",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.js"
+    },
+    "./templates": {
+      "types": "./dist/templates/index.d.ts",
+      "import": "./dist/templates/index.mjs",
+      "require": "./dist/templates/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "analysis",
+    "nlp",
+    "text-analysis",
+    "content-analysis",
+    "sentiment-analysis",
+    "seo",
+    "typescript",
+    "react"
+  ],
+  "author": "Matthew Ngo",
+  "license": "MIT",
+  "dependencies": {
+    "@matthew.ngo/ai-toolkit": "^1.0.0",
+    "natural": "^6.10.0",
+    "sentiment": "^5.0.2",
+    "compromise": "^14.10.0",
+    "franc": "^6.1.0",
+    "handlebars": "^4.7.8",
+    "marked": "^11.1.0",
+    "turndown": "^7.1.2",
+    "js-yaml": "^4.1.0",
+    "sanitize-html": "^2.11.0",
+    "highlight.js": "^11.9.0",
+    "zod": "^3.22.4",
+    "lru-cache": "^10.1.0",
+    "uuid": "^9.0.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/natural": "^5.1.5",
+    "@types/js-yaml": "^4.0.9",
+    "@types/sanitize-html": "^2.9.5",
+    "@types/lodash": "^4.14.202",
+    "@types/uuid": "^9.0.7",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthew.ngo/analysis-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthew.ngo/analysis-toolkit/issues"
+  },
+  "homepage": "https://github.com/matthew.ngo/analysis-toolkit#readme"
+}
