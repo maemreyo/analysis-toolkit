@@ -94,10 +94,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matthew.ngo/analysis-toolkit.git"
+    "url": "https://github.com/maemreyo/analysis-toolkit.git"
   },
   "bugs": {
-    "url": "https://github.com/matthew.ngo/analysis-toolkit/issues"
+    "url": "https://github.com/maemreyo/analysis-toolkit/issues"
   },
-  "homepage": "https://github.com/matthew.ngo/analysis-toolkit#readme"
+  "homepage": "https://github.com/maemreyo/analysis-toolkit#readme"
 }
